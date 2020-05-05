@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200505 14:21:16.198" generator="Robot 3.2 (Python 2.7.16 on win32)">
+<suite source="D:\projectJustEatRobo\testsuites\justEatSearchResturants.robot" id="s1" name="justEatSearchResturants">
+<test id="s1-t1" name="Feature: Use the website to find restaurants">
+<status status="FAIL" endtime="20200505 14:21:16.918" critical="yes" starttime="20200505 14:21:16.916">Test case contains no keywords.</status>
+</test>
+<test id="s1-t2" name=" So that I can order food">
+<status status="FAIL" endtime="20200505 14:21:16.923" critical="yes" starttime="20200505 14:21:16.921">Test case contains no keywords.</status>
+</test>
+<test id="s1-t3" name=" As a hungry customer">
+<status status="FAIL" endtime="20200505 14:21:16.927" critical="yes" starttime="20200505 14:21:16.926">Test case contains no keywords.</status>
+</test>
+<test id="s1-t4" name=" I want to be able to find restaurants in my area">
+<status status="FAIL" endtime="20200505 14:21:16.933" critical="yes" starttime="20200505 14:21:16.931">Test case contains no keywords.</status>
+</test>
+<test id="s1-t5" name="Scenario: Visit Just Eat Web Application">
+<kw name="Given Home Of Just Eat Is Open">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>urlEnv.txt</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20200505 14:21:16.940" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\testsuites\urlEnv.txt"&gt;D:\projectJustEatRobo\testsuites\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:21:16.941" level="FAIL">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</msg>
+<status status="FAIL" endtime="20200505 14:21:16.941" starttime="20200505 14:21:16.940"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.941" starttime="20200505 14:21:16.939"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.942" critical="yes" starttime="20200505 14:21:16.937">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</status>
+</test>
+<test id="s1-t6" name="Scenario: Just Eat Food Menu displayed">
+<kw name="Given Home Of Just Eat Is Open">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>urlEnv.txt</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20200505 14:21:16.948" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\testsuites\urlEnv.txt"&gt;D:\projectJustEatRobo\testsuites\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:21:16.949" level="FAIL">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</msg>
+<status status="FAIL" endtime="20200505 14:21:16.949" starttime="20200505 14:21:16.947"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.949" starttime="20200505 14:21:16.947"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.950" critical="yes" starttime="20200505 14:21:16.945">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</status>
+</test>
+<test id="s1-t7" name="Scenario: Just Eat Search Input is displaye">
+<kw name="Given Home Of Just Eat Is Open">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>urlEnv.txt</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20200505 14:21:16.959" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\testsuites\urlEnv.txt"&gt;D:\projectJustEatRobo\testsuites\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:21:16.959" level="FAIL">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</msg>
+<status status="FAIL" endtime="20200505 14:21:16.959" starttime="20200505 14:21:16.958"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.960" starttime="20200505 14:21:16.957"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.960" critical="yes" starttime="20200505 14:21:16.955">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</status>
+</test>
+<test id="s1-t8" name="Scenario: Search for restaurants in an area with postal code &quot;AR51 1AA&quot;">
+<kw name="Given Home Of Just Eat Is Open">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>urlEnv.txt</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20200505 14:21:16.973" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\testsuites\urlEnv.txt"&gt;D:\projectJustEatRobo\testsuites\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:21:16.974" level="FAIL">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</msg>
+<status status="FAIL" endtime="20200505 14:21:16.974" starttime="20200505 14:21:16.972"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.974" starttime="20200505 14:21:16.966"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.975" critical="yes" starttime="20200505 14:21:16.964">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</status>
+</test>
+<test id="s1-t9" name="Scenario: Search for restaurants in an random area &quot;ZZ511ZZ&quot;">
+<kw name="Given Home Of Just Eat Is Open">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>urlEnv.txt</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20200505 14:21:16.982" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\testsuites\urlEnv.txt"&gt;D:\projectJustEatRobo\testsuites\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:21:16.983" level="FAIL">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</msg>
+<status status="FAIL" endtime="20200505 14:21:16.983" starttime="20200505 14:21:16.982"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.983" starttime="20200505 14:21:16.981"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.984" critical="yes" starttime="20200505 14:21:16.979">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</status>
+</test>
+<test id="s1-t10" name="Scenario: I am new in the country and searching for restaurants">
+<kw name="Given Home Of Just Eat Is Open">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>urlEnv.txt</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20200505 14:21:16.991" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\testsuites\urlEnv.txt"&gt;D:\projectJustEatRobo\testsuites\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:21:16.992" level="FAIL">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</msg>
+<status status="FAIL" endtime="20200505 14:21:16.993" starttime="20200505 14:21:16.991"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.994" starttime="20200505 14:21:16.990"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:16.995" critical="yes" starttime="20200505 14:21:16.988">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</status>
+</test>
+<test id="s1-t11" name="Scenario: I am so hungary and searching for near by restaurants">
+<kw name="Given Home Of Just Eat Is Open">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>urlEnv.txt</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20200505 14:21:17.003" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\testsuites\urlEnv.txt"&gt;D:\projectJustEatRobo\testsuites\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:21:17.004" level="FAIL">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</msg>
+<status status="FAIL" endtime="20200505 14:21:17.004" starttime="20200505 14:21:17.002"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:17.004" starttime="20200505 14:21:17.001"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:17.006" critical="yes" starttime="20200505 14:21:16.999">IOError: [Errno 2] No such file or directory: u'D:\\projectJustEatRobo\\testsuites\\urlEnv.txt'</status>
+</test>
+<test id="s1-t12" name="[Teardown]">
+<kw name="Destroy Browser">
+<msg timestamp="20200505 14:21:17.028" level="FAIL">No keyword with name 'Destroy Browser' found.</msg>
+<status status="FAIL" endtime="20200505 14:21:17.028" starttime="20200505 14:21:17.028"></status>
+</kw>
+<status status="FAIL" endtime="20200505 14:21:17.030" critical="yes" starttime="20200505 14:21:17.010">No keyword with name 'Destroy Browser' found.</status>
+</test>
+<status status="FAIL" endtime="20200505 14:21:17.034" starttime="20200505 14:21:16.203"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="12" pass="0">Critical Tests</stat>
+<stat fail="12" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="12" id="s1" name="justEatSearchResturants" pass="0">justEatSearchResturants</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200505 14:21:16.611" level="ERROR">Error in file 'D:\projectJustEatRobo\testsuites\justEatSearchResturants.robot' on line 3: Importing test library 'D:\projectJustEatRobo\util\commonCallsFireFox.py' failed: ImportError: No module named util.firefoxDriver
+Traceback (most recent call last):
+  File "D:\projectJustEatRobo\util\commonCallsFireFox.py", line 7, in &lt;module&gt;
+    from util.firefoxDriver import get_driver
+PYTHONPATH:
+  c:\Users\Bilal\Anaconda2\python27.zip
+  c:\Users\Bilal\Anaconda2\DLLs
+  c:\Users\Bilal\Anaconda2\lib
+  c:\Users\Bilal\Anaconda2\lib\plat-win
+  c:\Users\Bilal\Anaconda2\lib\lib-tk
+  c:\Users\Bilal\Anaconda2
+  c:\Users\Bilal\Anaconda2\lib\site-packages
+  c:\Users\Bilal\Anaconda2\lib\site-packages\win32
+  c:\Users\Bilal\Anaconda2\lib\site-packages\win32\lib
+  c:\Users\Bilal\Anaconda2\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20200505 14:21:16.813" level="ERROR">Error in file 'D:\projectJustEatRobo\testsuites\justEatSearchResturants.robot' on line 5: Importing test library 'D:\projectJustEatRobo\util\Open_Url_Firefox.py' failed: ImportError: No module named util.firefoxDriver
+Traceback (most recent call last):
+  File "D:\projectJustEatRobo\util\Open_Url_Firefox.py", line 3, in &lt;module&gt;
+    from util.firefoxDriver import get_driver
+PYTHONPATH:
+  c:\Users\Bilal\Anaconda2\python27.zip
+  c:\Users\Bilal\Anaconda2\DLLs
+  c:\Users\Bilal\Anaconda2\lib
+  c:\Users\Bilal\Anaconda2\lib\plat-win
+  c:\Users\Bilal\Anaconda2\lib\lib-tk
+  c:\Users\Bilal\Anaconda2
+  c:\Users\Bilal\Anaconda2\lib\site-packages
+  c:\Users\Bilal\Anaconda2\lib\site-packages\win32
+  c:\Users\Bilal\Anaconda2\lib\site-packages\win32\lib
+  c:\Users\Bilal\Anaconda2\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>

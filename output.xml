@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200505 12:54:07.192" generator="Robot 3.2 (Python 2.7.16 on win32)">
+<robot rpa="false" generated="20200505 14:25:28.484" generator="Robot 3.2 (Python 2.7.16 on win32)">
 <suite source="D:\projectJustEatRobo\testsuites" id="s1" name="Testsuites">
-<suite source="D:\projectJustEatRobo\testsuites\justEatUsingFireFox.robot" id="s1-s1" name="justEatUsingFireFox">
-<test id="s1-s1-t1" name="Verify Just Eat Title">
+<suite source="D:\projectJustEatRobo\testsuites\justEatSearchResturants.robot" id="s1-s1" name="justEatSearchResturants">
+<test id="s1-s1-t1" name="Feature: Use the website to find restaurants">
+<status status="FAIL" endtime="20200505 14:25:39.123" critical="yes" starttime="20200505 14:25:39.120">Test case contains no keywords.</status>
+</test>
+<test id="s1-s1-t2" name=" So that I can order food">
+<status status="FAIL" endtime="20200505 14:25:39.129" critical="yes" starttime="20200505 14:25:39.127">Test case contains no keywords.</status>
+</test>
+<test id="s1-s1-t3" name=" As a hungry customer">
+<status status="FAIL" endtime="20200505 14:25:39.135" critical="yes" starttime="20200505 14:25:39.133">Test case contains no keywords.</status>
+</test>
+<test id="s1-s1-t4" name=" I want to be able to find restaurants in my area">
+<status status="FAIL" endtime="20200505 14:25:39.141" critical="yes" starttime="20200505 14:25:39.139">Test case contains no keywords.</status>
+</test>
+<test id="s1-s1-t5" name="Scenario: Visit Just Eat Web Application">
 <kw name="Given Home Of Just Eat Is Open">
 <kw name="Get File" library="OperatingSystem">
 <doc>Returns the contents of a specified file.</doc>
@@ -12,10 +24,10 @@
 <assign>
 <var>${url}</var>
 </assign>
-<msg timestamp="20200505 12:54:15.982" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
-<msg timestamp="20200505 12:54:15.983" level="INFO">${url} = http://www.just-eat.co.uk/
+<msg timestamp="20200505 14:25:39.150" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:25:39.151" level="INFO">${url} = http://www.just-eat.co.uk/
 </msg>
-<status status="PASS" endtime="20200505 12:54:15.983" starttime="20200505 12:54:15.982"></status>
+<status status="PASS" endtime="20200505 14:25:39.152" starttime="20200505 14:25:39.149"></status>
 </kw>
 <kw name="Test Open Url" library="Open_Url_Firefox">
 <doc>This tests verifies the VODISUI UI ui is launched from the system using firefox browser.
@@ -26,19 +38,20 @@ Expected results:
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:54:28.120" starttime="20200505 12:54:15.983"></status>
+<status status="PASS" endtime="20200505 14:25:51.693" starttime="20200505 14:25:39.152"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:54:28.121" starttime="20200505 12:54:15.981"></status>
+<status status="PASS" endtime="20200505 14:25:51.694" starttime="20200505 14:25:39.148"></status>
 </kw>
 <kw name="Display Title" library="commonCallsFireFox">
+<doc>Return the page title - Just Eat</doc>
 <arguments>
 <arg>${HOME-PAGE-TITLE LOCATOR}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:54:28.128" starttime="20200505 12:54:28.122"></status>
+<status status="PASS" endtime="20200505 14:25:51.701" starttime="20200505 14:25:51.695"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:54:28.131" critical="yes" starttime="20200505 12:54:15.979"></status>
+<status status="PASS" endtime="20200505 14:25:51.703" critical="yes" starttime="20200505 14:25:39.145"></status>
 </test>
-<test id="s1-s1-t2" name="Verify Just Eat Content Titles">
+<test id="s1-s1-t6" name="Scenario: Just Eat Food Menu displayed">
 <kw name="Given Home Of Just Eat Is Open">
 <kw name="Get File" library="OperatingSystem">
 <doc>Returns the contents of a specified file.</doc>
@@ -48,10 +61,10 @@ Expected results:
 <assign>
 <var>${url}</var>
 </assign>
-<msg timestamp="20200505 12:54:28.141" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
-<msg timestamp="20200505 12:54:28.142" level="INFO">${url} = http://www.just-eat.co.uk/
+<msg timestamp="20200505 14:25:51.713" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:25:51.714" level="INFO">${url} = http://www.just-eat.co.uk/
 </msg>
-<status status="PASS" endtime="20200505 12:54:28.142" starttime="20200505 12:54:28.141"></status>
+<status status="PASS" endtime="20200505 14:25:51.714" starttime="20200505 14:25:51.713"></status>
 </kw>
 <kw name="Test Open Url" library="Open_Url_Firefox">
 <doc>This tests verifies the VODISUI UI ui is launched from the system using firefox browser.
@@ -62,11 +75,15 @@ Expected results:
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:54:34.707" starttime="20200505 12:54:28.143"></status>
+<status status="PASS" endtime="20200505 14:25:58.507" starttime="20200505 14:25:51.715"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:54:34.708" starttime="20200505 12:54:28.140"></status>
+<status status="PASS" endtime="20200505 14:25:58.508" starttime="20200505 14:25:51.711"></status>
 </kw>
 <kw name="Find ContentTitles" library="commonCallsFireFox">
+<doc>Find Content Title and Subtitle
+Return Text:
+    Tuck into a takeaway today
+    Find restaurants delivering right now, near you</doc>
 <arguments>
 <arg>title</arg>
 <arg>subtitle</arg>
@@ -74,9 +91,9 @@ Expected results:
 <assign>
 <var>${contentTitles}</var>
 </assign>
-<msg timestamp="20200505 12:54:34.807" level="INFO">(u'Tuck into a takeaway today', ' ', u'Find restaurants delivering right now, near you')</msg>
-<msg timestamp="20200505 12:54:34.808" level="INFO">${contentTitles} = (u'Tuck into a takeaway today', u'Find restaurants delivering right now, near you')</msg>
-<status status="PASS" endtime="20200505 12:54:34.808" starttime="20200505 12:54:34.709"></status>
+<msg timestamp="20200505 14:25:58.637" level="INFO">(u'Tuck into a takeaway today', ' ', u'Find restaurants delivering right now, near you')</msg>
+<msg timestamp="20200505 14:25:58.638" level="INFO">${contentTitles} = (u'Tuck into a takeaway today', u'Find restaurants delivering right now, near you')</msg>
+<status status="PASS" endtime="20200505 14:25:58.638" starttime="20200505 14:25:58.509"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -84,7 +101,7 @@ Expected results:
 <arg>${contentTitles[0]}</arg>
 <arg>${HOME-PAGE-CONTENT-TITLE LOCATOR}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:54:34.810" starttime="20200505 12:54:34.809"></status>
+<status status="PASS" endtime="20200505 14:25:58.640" starttime="20200505 14:25:58.639"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -92,11 +109,11 @@ Expected results:
 <arg>${contentTitles[1]}</arg>
 <arg>${HOME-PAGE-CONTENT-SUBTITLE LOCATOR}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:54:34.812" starttime="20200505 12:54:34.811"></status>
+<status status="PASS" endtime="20200505 14:25:58.642" starttime="20200505 14:25:58.641"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:54:34.813" critical="yes" starttime="20200505 12:54:28.138"></status>
+<status status="PASS" endtime="20200505 14:25:58.643" critical="yes" starttime="20200505 14:25:51.709"></status>
 </test>
-<test id="s1-s1-t3" name="Verify Just Eat Search Attributes">
+<test id="s1-s1-t7" name="Scenario: Just Eat Search Input is displaye">
 <kw name="Given Home Of Just Eat Is Open">
 <kw name="Get File" library="OperatingSystem">
 <doc>Returns the contents of a specified file.</doc>
@@ -106,10 +123,10 @@ Expected results:
 <assign>
 <var>${url}</var>
 </assign>
-<msg timestamp="20200505 12:54:34.828" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
-<msg timestamp="20200505 12:54:34.829" level="INFO">${url} = http://www.just-eat.co.uk/
+<msg timestamp="20200505 14:25:58.649" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:25:58.650" level="INFO">${url} = http://www.just-eat.co.uk/
 </msg>
-<status status="PASS" endtime="20200505 12:54:34.829" starttime="20200505 12:54:34.827"></status>
+<status status="PASS" endtime="20200505 14:25:58.650" starttime="20200505 14:25:58.649"></status>
 </kw>
 <kw name="Test Open Url" library="Open_Url_Firefox">
 <doc>This tests verifies the VODISUI UI ui is launched from the system using firefox browser.
@@ -120,16 +137,22 @@ Expected results:
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:54:41.686" starttime="20200505 12:54:34.830"></status>
+<status status="PASS" endtime="20200505 14:26:05.260" starttime="20200505 14:25:58.651"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:54:41.687" starttime="20200505 12:54:34.826"></status>
+<status status="PASS" endtime="20200505 14:26:05.260" starttime="20200505 14:25:58.648"></status>
 </kw>
 <kw name="Find Search" library="commonCallsFireFox">
+<doc>Find Search Query field, label and Search button
+    Return Text:
+        name: postcode
+        aria-lable: Enter your postcode
+        Seach button type : submit
+        Find restaurants delivering right now, near you</doc>
 <assign>
 <var>${findSearch}</var>
 </assign>
-<msg timestamp="20200505 12:54:41.809" level="INFO">${findSearch} = (u'postcode', u'Enter your postcode', u'submit')</msg>
-<status status="PASS" endtime="20200505 12:54:41.809" starttime="20200505 12:54:41.688"></status>
+<msg timestamp="20200505 14:26:05.551" level="INFO">${findSearch} = (u'postcode', u'Enter your postcode', u'submit')</msg>
+<status status="PASS" endtime="20200505 14:26:05.551" starttime="20200505 14:26:05.261"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -137,7 +160,7 @@ Expected results:
 <arg>${findSearch[0]}</arg>
 <arg>${HOME-PAGE-NAME LOCATOR}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:54:41.811" starttime="20200505 12:54:41.810"></status>
+<status status="PASS" endtime="20200505 14:26:05.553" starttime="20200505 14:26:05.552"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -145,7 +168,7 @@ Expected results:
 <arg>${findSearch[1]}</arg>
 <arg>${HOME-PAGE-LABEL LOCATOR}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:54:41.813" starttime="20200505 12:54:41.812"></status>
+<status status="PASS" endtime="20200505 14:26:05.555" starttime="20200505 14:26:05.554"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -153,11 +176,11 @@ Expected results:
 <arg>${findSearch[2]}</arg>
 <arg>${HOME-PAGE-BUTTON LOCATOR}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:54:41.814" starttime="20200505 12:54:41.813"></status>
+<status status="PASS" endtime="20200505 14:26:05.557" starttime="20200505 14:26:05.555"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:54:41.815" critical="yes" starttime="20200505 12:54:34.823"></status>
+<status status="PASS" endtime="20200505 14:26:05.558" critical="yes" starttime="20200505 14:25:58.646"></status>
 </test>
-<test id="s1-s1-t4" name="Verify Just Eat Total Number of Resturants When Postal Code is valid">
+<test id="s1-s1-t8" name="Scenario: Search for restaurants in an area with postal code &quot;AR51 1AA&quot;">
 <kw name="Given Home Of Just Eat Is Open">
 <kw name="Get File" library="OperatingSystem">
 <doc>Returns the contents of a specified file.</doc>
@@ -167,10 +190,10 @@ Expected results:
 <assign>
 <var>${url}</var>
 </assign>
-<msg timestamp="20200505 12:54:41.827" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
-<msg timestamp="20200505 12:54:41.828" level="INFO">${url} = http://www.just-eat.co.uk/
+<msg timestamp="20200505 14:26:05.564" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:26:05.565" level="INFO">${url} = http://www.just-eat.co.uk/
 </msg>
-<status status="PASS" endtime="20200505 12:54:41.828" starttime="20200505 12:54:41.827"></status>
+<status status="PASS" endtime="20200505 14:26:05.565" starttime="20200505 14:26:05.564"></status>
 </kw>
 <kw name="Test Open Url" library="Open_Url_Firefox">
 <doc>This tests verifies the VODISUI UI ui is launched from the system using firefox browser.
@@ -181,9 +204,9 @@ Expected results:
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:54:48.420" starttime="20200505 12:54:41.828"></status>
+<status status="PASS" endtime="20200505 14:26:12.242" starttime="20200505 14:26:05.565"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:54:48.422" starttime="20200505 12:54:41.826"></status>
+<status status="PASS" endtime="20200505 14:26:12.243" starttime="20200505 14:26:05.563"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -193,37 +216,44 @@ Expected results:
 <assign>
 <var>${postcode}</var>
 </assign>
-<msg timestamp="20200505 12:54:48.426" level="INFO">${postcode} = AR511AA</msg>
-<status status="PASS" endtime="20200505 12:54:48.426" starttime="20200505 12:54:48.425"></status>
+<msg timestamp="20200505 14:26:12.246" level="INFO">${postcode} = AR511AA</msg>
+<status status="PASS" endtime="20200505 14:26:12.246" starttime="20200505 14:26:12.244"></status>
 </kw>
-<kw name="When Postal Code Is Inserted">
+<kw name="When I want food in">
 <arguments>
 <arg>${postcode}</arg>
 </arguments>
 <kw name="Enter PostalCode" library="commonCallsFireFox">
+<doc>Validate Postal code in Search Query field
+    Return:
+        if Postal code valid: display list of available resturants in given Postal code
+        Else display Error message</doc>
 <arguments>
 <arg>${postcode}</arg>
 </arguments>
 <assign>
 <var>${enter_postalCode}</var>
 </assign>
-<msg timestamp="20200505 12:55:19.548" level="INFO">Filtered Page is ready</msg>
-<msg timestamp="20200505 12:55:19.548" level="INFO">${enter_postalCode} = None</msg>
-<status status="PASS" endtime="20200505 12:55:19.548" starttime="20200505 12:54:48.429"></status>
+<msg timestamp="20200505 14:26:44.028" level="INFO">Filtered Page is ready</msg>
+<msg timestamp="20200505 14:26:44.028" level="INFO">${enter_postalCode} = None</msg>
+<status status="PASS" endtime="20200505 14:26:44.029" starttime="20200505 14:26:12.249"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:55:19.549" starttime="20200505 12:54:48.427"></status>
+<status status="PASS" endtime="20200505 14:26:44.029" starttime="20200505 14:26:12.247"></status>
 </kw>
-<kw name="Then Total number of Resturants Should Be Shown">
+<kw name="Then I should see some restaurants in">
 <arguments>
 <arg>${postcode}</arg>
 </arguments>
 <kw name="Filtered Resturants" library="commonCallsFireFox">
+<doc>Filtered list of Resturant based on postal code
+Captured Postal Code
+and counts message including Total number of Resturant found basded on given postal code</doc>
 <assign>
 <var>${filtered_resturants}</var>
 </assign>
-<msg timestamp="20200505 12:55:19.628" level="INFO">('counterMsg', '1028 open restaurants')</msg>
-<msg timestamp="20200505 12:55:19.628" level="INFO">${filtered_resturants} = ('AR511AA', '1028 open restaurants')</msg>
-<status status="PASS" endtime="20200505 12:55:19.628" starttime="20200505 12:55:19.551"></status>
+<msg timestamp="20200505 14:26:44.125" level="INFO">('counterMsg', '1079 open restaurants')</msg>
+<msg timestamp="20200505 14:26:44.125" level="INFO">${filtered_resturants} = ('AR511AA', '1079 open restaurants')</msg>
+<status status="PASS" endtime="20200505 14:26:44.126" starttime="20200505 14:26:44.032"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -232,10 +262,10 @@ Expected results:
 <arg>${postcode}</arg>
 <arg>ignore_case=True</arg>
 </arguments>
-<msg timestamp="20200505 12:55:19.630" level="INFO">Argument types are:
+<msg timestamp="20200505 14:26:44.128" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200505 12:55:19.631" starttime="20200505 12:55:19.629"></status>
+<status status="PASS" endtime="20200505 14:26:44.128" starttime="20200505 14:26:44.126"></status>
 </kw>
 <kw name="Should Contain Any" library="BuiltIn">
 <doc>Fails if ``container`` does not contain any of the ``*items``.</doc>
@@ -246,13 +276,13 @@ Expected results:
 <arg>restaurants</arg>
 <arg>ignore_case=True</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:55:19.632" starttime="20200505 12:55:19.631"></status>
+<status status="PASS" endtime="20200505 14:26:44.130" starttime="20200505 14:26:44.129"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:55:19.633" starttime="20200505 12:55:19.550"></status>
+<status status="PASS" endtime="20200505 14:26:44.131" starttime="20200505 14:26:44.030"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:55:19.634" critical="yes" starttime="20200505 12:54:41.824"></status>
+<status status="PASS" endtime="20200505 14:26:44.132" critical="yes" starttime="20200505 14:26:05.561"></status>
 </test>
-<test id="s1-s1-t5" name="Verify Just Eat Total Number of Resturants When Postal Code is Unknown">
+<test id="s1-s1-t9" name="Scenario: Search for restaurants in an random area &quot;ZZ511ZZ&quot;">
 <kw name="Given Home Of Just Eat Is Open">
 <kw name="Get File" library="OperatingSystem">
 <doc>Returns the contents of a specified file.</doc>
@@ -262,10 +292,10 @@ Expected results:
 <assign>
 <var>${url}</var>
 </assign>
-<msg timestamp="20200505 12:55:19.646" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
-<msg timestamp="20200505 12:55:19.648" level="INFO">${url} = http://www.just-eat.co.uk/
+<msg timestamp="20200505 14:26:44.138" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:26:44.139" level="INFO">${url} = http://www.just-eat.co.uk/
 </msg>
-<status status="PASS" endtime="20200505 12:55:19.648" starttime="20200505 12:55:19.645"></status>
+<status status="PASS" endtime="20200505 14:26:44.139" starttime="20200505 14:26:44.138"></status>
 </kw>
 <kw name="Test Open Url" library="Open_Url_Firefox">
 <doc>This tests verifies the VODISUI UI ui is launched from the system using firefox browser.
@@ -276,9 +306,9 @@ Expected results:
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:55:26.218" starttime="20200505 12:55:19.648"></status>
+<status status="PASS" endtime="20200505 14:26:50.826" starttime="20200505 14:26:44.139"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:55:26.218" starttime="20200505 12:55:19.644"></status>
+<status status="PASS" endtime="20200505 14:26:50.827" starttime="20200505 14:26:44.137"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -288,37 +318,44 @@ Expected results:
 <assign>
 <var>${postcode}</var>
 </assign>
-<msg timestamp="20200505 12:55:26.220" level="INFO">${postcode} = ZZ511ZZ</msg>
-<status status="PASS" endtime="20200505 12:55:26.220" starttime="20200505 12:55:26.219"></status>
+<msg timestamp="20200505 14:26:50.828" level="INFO">${postcode} = ZZ511ZZ</msg>
+<status status="PASS" endtime="20200505 14:26:50.828" starttime="20200505 14:26:50.828"></status>
 </kw>
-<kw name="When Postal Code Is Inserted">
+<kw name="When I want food in">
 <arguments>
 <arg>${postcode}</arg>
 </arguments>
 <kw name="Enter PostalCode" library="commonCallsFireFox">
+<doc>Validate Postal code in Search Query field
+    Return:
+        if Postal code valid: display list of available resturants in given Postal code
+        Else display Error message</doc>
 <arguments>
 <arg>${postcode}</arg>
 </arguments>
 <assign>
 <var>${enter_postalCode}</var>
 </assign>
-<msg timestamp="20200505 12:55:48.876" level="INFO">Filtered Page is ready</msg>
-<msg timestamp="20200505 12:55:48.876" level="INFO">${enter_postalCode} = None</msg>
-<status status="PASS" endtime="20200505 12:55:48.876" starttime="20200505 12:55:26.223"></status>
+<msg timestamp="20200505 14:27:13.401" level="INFO">Filtered Page is ready</msg>
+<msg timestamp="20200505 14:27:13.402" level="INFO">${enter_postalCode} = None</msg>
+<status status="PASS" endtime="20200505 14:27:13.402" starttime="20200505 14:26:50.830"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:55:48.876" starttime="20200505 12:55:26.221"></status>
+<status status="PASS" endtime="20200505 14:27:13.402" starttime="20200505 14:26:50.829"></status>
 </kw>
-<kw name="Then Total number of Resturants Should Be Shown">
+<kw name="Then I should see some restaurants in">
 <arguments>
 <arg>${postcode}</arg>
 </arguments>
 <kw name="Filtered Resturants" library="commonCallsFireFox">
+<doc>Filtered list of Resturant based on postal code
+Captured Postal Code
+and counts message including Total number of Resturant found basded on given postal code</doc>
 <assign>
 <var>${filtered_resturants}</var>
 </assign>
-<msg timestamp="20200505 12:55:48.950" level="INFO">('counterMsg', 'No open restaurants')</msg>
-<msg timestamp="20200505 12:55:48.950" level="INFO">${filtered_resturants} = ('ZZ511ZZ', 'No open restaurants')</msg>
-<status status="PASS" endtime="20200505 12:55:48.950" starttime="20200505 12:55:48.878"></status>
+<msg timestamp="20200505 14:27:13.473" level="INFO">('counterMsg', 'No open restaurants')</msg>
+<msg timestamp="20200505 14:27:13.474" level="INFO">${filtered_resturants} = ('ZZ511ZZ', 'No open restaurants')</msg>
+<status status="PASS" endtime="20200505 14:27:13.474" starttime="20200505 14:27:13.404"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -327,10 +364,10 @@ Expected results:
 <arg>${postcode}</arg>
 <arg>ignore_case=True</arg>
 </arguments>
-<msg timestamp="20200505 12:55:48.952" level="INFO">Argument types are:
+<msg timestamp="20200505 14:27:13.475" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200505 12:55:48.952" starttime="20200505 12:55:48.951"></status>
+<status status="PASS" endtime="20200505 14:27:13.475" starttime="20200505 14:27:13.474"></status>
 </kw>
 <kw name="Should Contain Any" library="BuiltIn">
 <doc>Fails if ``container`` does not contain any of the ``*items``.</doc>
@@ -341,13 +378,13 @@ Expected results:
 <arg>restaurants</arg>
 <arg>ignore_case=True</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:55:48.953" starttime="20200505 12:55:48.953"></status>
+<status status="PASS" endtime="20200505 14:27:13.477" starttime="20200505 14:27:13.476"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:55:48.954" starttime="20200505 12:55:48.877"></status>
+<status status="PASS" endtime="20200505 14:27:13.477" starttime="20200505 14:27:13.403"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:55:48.955" critical="yes" starttime="20200505 12:55:19.641"></status>
+<status status="PASS" endtime="20200505 14:27:13.478" critical="yes" starttime="20200505 14:26:44.135"></status>
 </test>
-<test id="s1-s1-t6" name="Verify Just Eat No Resturants found When Post Code is invalid">
+<test id="s1-s1-t10" name="Scenario: I am new in the country and searching for restaurants">
 <kw name="Given Home Of Just Eat Is Open">
 <kw name="Get File" library="OperatingSystem">
 <doc>Returns the contents of a specified file.</doc>
@@ -357,10 +394,10 @@ Expected results:
 <assign>
 <var>${url}</var>
 </assign>
-<msg timestamp="20200505 12:55:48.964" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
-<msg timestamp="20200505 12:55:48.965" level="INFO">${url} = http://www.just-eat.co.uk/
+<msg timestamp="20200505 14:27:13.485" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:27:13.485" level="INFO">${url} = http://www.just-eat.co.uk/
 </msg>
-<status status="PASS" endtime="20200505 12:55:48.965" starttime="20200505 12:55:48.964"></status>
+<status status="PASS" endtime="20200505 14:27:13.486" starttime="20200505 14:27:13.484"></status>
 </kw>
 <kw name="Test Open Url" library="Open_Url_Firefox">
 <doc>This tests verifies the VODISUI UI ui is launched from the system using firefox browser.
@@ -371,9 +408,9 @@ Expected results:
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:55:55.240" starttime="20200505 12:55:48.965"></status>
+<status status="PASS" endtime="20200505 14:27:19.941" starttime="20200505 14:27:13.486"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:55:55.241" starttime="20200505 12:55:48.963"></status>
+<status status="PASS" endtime="20200505 14:27:19.942" starttime="20200505 14:27:13.483"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -383,27 +420,31 @@ Expected results:
 <assign>
 <var>${postcode}</var>
 </assign>
-<msg timestamp="20200505 12:55:55.245" level="INFO">${postcode} = AR51</msg>
-<status status="PASS" endtime="20200505 12:55:55.245" starttime="20200505 12:55:55.244"></status>
+<msg timestamp="20200505 14:27:19.946" level="INFO">${postcode} = AR51</msg>
+<status status="PASS" endtime="20200505 14:27:19.946" starttime="20200505 14:27:19.944"></status>
 </kw>
-<kw name="When Postal Code Is Inserted">
+<kw name="When I want food in">
 <arguments>
 <arg>${postcode}</arg>
 </arguments>
 <kw name="Enter PostalCode" library="commonCallsFireFox">
+<doc>Validate Postal code in Search Query field
+    Return:
+        if Postal code valid: display list of available resturants in given Postal code
+        Else display Error message</doc>
 <arguments>
 <arg>${postcode}</arg>
 </arguments>
 <assign>
 <var>${enter_postalCode}</var>
 </assign>
-<msg timestamp="20200505 12:56:15.852" level="INFO">Filtered Page is ready</msg>
-<msg timestamp="20200505 12:56:15.853" level="INFO">${enter_postalCode} = None</msg>
-<status status="PASS" endtime="20200505 12:56:15.853" starttime="20200505 12:55:55.247"></status>
+<msg timestamp="20200505 14:27:40.419" level="INFO">Filtered Page is ready</msg>
+<msg timestamp="20200505 14:27:40.420" level="INFO">${enter_postalCode} = None</msg>
+<status status="PASS" endtime="20200505 14:27:40.420" starttime="20200505 14:27:19.950"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:56:15.853" starttime="20200505 12:55:55.246"></status>
+<status status="PASS" endtime="20200505 14:27:40.420" starttime="20200505 14:27:19.947"></status>
 </kw>
-<kw name="Then The Error Message Result Should Be Shown">
+<kw name="Then Oops Error Message is shown">
 <kw name="Postalcode">
 <arguments>
 <arg>ErrorMsg</arg>
@@ -411,16 +452,16 @@ Expected results:
 <assign>
 <var>${postalcode_ErrorMsg}=</var>
 </assign>
-<msg timestamp="20200505 12:56:15.872" level="FAIL">No keyword with name 'Postalcode' found. Did you mean:
+<msg timestamp="20200505 14:27:40.442" level="FAIL">No keyword with name 'Postalcode' found. Did you mean:
     commonCallsFireFox.Enter PostalCode</msg>
-<status status="FAIL" endtime="20200505 12:56:15.872" starttime="20200505 12:56:15.871"></status>
+<status status="FAIL" endtime="20200505 14:27:40.442" starttime="20200505 14:27:40.442"></status>
 </kw>
-<status status="FAIL" endtime="20200505 12:56:15.872" starttime="20200505 12:56:15.855"></status>
+<status status="FAIL" endtime="20200505 14:27:40.443" starttime="20200505 14:27:40.421"></status>
 </kw>
-<status status="FAIL" endtime="20200505 12:56:15.874" critical="yes" starttime="20200505 12:55:48.961">No keyword with name 'Postalcode' found. Did you mean:
+<status status="FAIL" endtime="20200505 14:27:40.444" critical="yes" starttime="20200505 14:27:13.481">No keyword with name 'Postalcode' found. Did you mean:
     commonCallsFireFox.Enter PostalCode</status>
 </test>
-<test id="s1-s1-t7" name="Verify Just Eat Search Error Message When Postal Code is null">
+<test id="s1-s1-t11" name="Scenario: I am so hungary and searching for near by restaurants">
 <kw name="Given Home Of Just Eat Is Open">
 <kw name="Get File" library="OperatingSystem">
 <doc>Returns the contents of a specified file.</doc>
@@ -430,10 +471,10 @@ Expected results:
 <assign>
 <var>${url}</var>
 </assign>
-<msg timestamp="20200505 12:56:15.883" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
-<msg timestamp="20200505 12:56:15.884" level="INFO">${url} = http://www.just-eat.co.uk/
+<msg timestamp="20200505 14:27:40.451" html="yes" level="INFO">Getting file '&lt;a href="file://D:\projectJustEatRobo\urlEnv.txt"&gt;D:\projectJustEatRobo\urlEnv.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20200505 14:27:40.452" level="INFO">${url} = http://www.just-eat.co.uk/
 </msg>
-<status status="PASS" endtime="20200505 12:56:15.884" starttime="20200505 12:56:15.882"></status>
+<status status="PASS" endtime="20200505 14:27:40.452" starttime="20200505 14:27:40.450"></status>
 </kw>
 <kw name="Test Open Url" library="Open_Url_Firefox">
 <doc>This tests verifies the VODISUI UI ui is launched from the system using firefox browser.
@@ -444,9 +485,9 @@ Expected results:
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<status status="PASS" endtime="20200505 12:56:22.236" starttime="20200505 12:56:15.885"></status>
+<status status="PASS" endtime="20200505 14:27:46.917" starttime="20200505 14:27:40.452"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:56:22.237" starttime="20200505 12:56:15.881"></status>
+<status status="PASS" endtime="20200505 14:27:46.917" starttime="20200505 14:27:40.450"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -456,61 +497,36 @@ Expected results:
 <assign>
 <var>${postcode}</var>
 </assign>
-<msg timestamp="20200505 12:56:22.240" level="INFO">${postcode} = "''"</msg>
-<status status="PASS" endtime="20200505 12:56:22.240" starttime="20200505 12:56:22.239"></status>
+<msg timestamp="20200505 14:27:46.919" level="INFO">${postcode} = "''"</msg>
+<status status="PASS" endtime="20200505 14:27:46.919" starttime="20200505 14:27:46.918"></status>
 </kw>
-<kw name="When Postal Code Is Inserted">
-<arguments>
-<arg>${postcode}</arg>
-</arguments>
-<kw name="Enter PostalCode" library="commonCallsFireFox">
-<arguments>
-<arg>${postcode}</arg>
-</arguments>
-<assign>
-<var>${enter_postalCode}</var>
-</assign>
-<msg timestamp="20200505 12:56:42.691" level="INFO">Filtered Page is ready</msg>
-<msg timestamp="20200505 12:56:42.691" level="INFO">${enter_postalCode} = None</msg>
-<status status="PASS" endtime="20200505 12:56:42.691" starttime="20200505 12:56:22.243"></status>
+<kw name="When I want food in ${postcode}">
+<msg timestamp="20200505 14:27:46.943" level="FAIL">No keyword with name 'When I want food in ${postcode}' found.</msg>
+<status status="FAIL" endtime="20200505 14:27:46.943" starttime="20200505 14:27:46.942"></status>
 </kw>
-<status status="PASS" endtime="20200505 12:56:42.692" starttime="20200505 12:56:22.242"></status>
-</kw>
-<kw name="Then The Error Message Result Should Be Shown">
-<kw name="Postalcode">
-<arguments>
-<arg>ErrorMsg</arg>
-</arguments>
-<assign>
-<var>${postalcode_ErrorMsg}=</var>
-</assign>
-<msg timestamp="20200505 12:56:42.709" level="FAIL">No keyword with name 'Postalcode' found. Did you mean:
-    commonCallsFireFox.Enter PostalCode</msg>
-<status status="FAIL" endtime="20200505 12:56:42.709" starttime="20200505 12:56:42.709"></status>
-</kw>
-<status status="FAIL" endtime="20200505 12:56:42.710" starttime="20200505 12:56:42.693"></status>
-</kw>
-<kw type="teardown" name="Destroy Browser" library="Open_Url_Firefox">
-<doc>To close the launched browser after the test completion.</doc>
-<status status="PASS" endtime="20200505 12:56:45.309" starttime="20200505 12:56:42.712"></status>
-</kw>
-<status status="FAIL" endtime="20200505 12:56:45.310" critical="yes" starttime="20200505 12:56:15.879">No keyword with name 'Postalcode' found. Did you mean:
-    commonCallsFireFox.Enter PostalCode</status>
+<status status="FAIL" endtime="20200505 14:27:46.944" critical="yes" starttime="20200505 14:27:40.448">No keyword with name 'When I want food in ${postcode}' found.</status>
 </test>
-<status status="FAIL" endtime="20200505 12:56:45.316" starttime="20200505 12:54:07.258"></status>
+<test id="s1-s1-t12" name="[Teardown]">
+<kw name="Destroy Browser" library="Open_Url_Firefox">
+<doc>To close the launched browser after the test completion.</doc>
+<status status="PASS" endtime="20200505 14:27:49.273" starttime="20200505 14:27:46.951"></status>
+</kw>
+<status status="PASS" endtime="20200505 14:27:49.274" critical="yes" starttime="20200505 14:27:46.949"></status>
+</test>
+<status status="FAIL" endtime="20200505 14:27:49.280" starttime="20200505 14:25:28.542"></status>
 </suite>
-<status status="FAIL" endtime="20200505 12:56:45.334" starttime="20200505 12:54:07.197"></status>
+<status status="FAIL" endtime="20200505 14:27:49.301" starttime="20200505 14:25:28.488"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="2" pass="5">Critical Tests</stat>
-<stat fail="2" pass="5">All Tests</stat>
+<stat fail="6" pass="6">Critical Tests</stat>
+<stat fail="6" pass="6">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="2" id="s1" name="Testsuites" pass="5">Testsuites</stat>
-<stat fail="2" id="s1-s1" name="justEatUsingFireFox" pass="5">Testsuites.justEatUsingFireFox</stat>
+<stat fail="6" id="s1" name="Testsuites" pass="6">Testsuites</stat>
+<stat fail="6" id="s1-s1" name="justEatSearchResturants" pass="6">Testsuites.justEatSearchResturants</stat>
 </suite>
 </statistics>
 <errors>

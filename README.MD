@@ -42,7 +42,7 @@ Running the tests is very easy:
 
 To run a part of your test suite you can add a tag name to your command line:
 ```
-    $ python -m robot.run --include behavior-driven testsuites
+    $ python -m robot testsuites
 ```    
 With the above commands we the test suites , or test cases with the `behavior-driven` tag. To exclude tests you can use the `--exclude` parameter
 
@@ -55,9 +55,12 @@ See `$ python -m robot.run --help` for more information
 `Project folder` - contains report, log and README etc
 
 + List of TestCases:
-    - Verify Just Eat Content Titles
-    - Verify Just Eat Search Attributes
-    - Verify Just Eat Total Number of Resturants When Postal Code is valid
-    - Verify Just Eat Total Number of Resturants When Postal Code is Unknown
-    - Verify Just Eat No Resturants found When Post Code is invalid
-    - Verify Just Eat Search Error Message When Postal Code is null "# JustEatDemoRobotframework" 
+    - Scenario: Visit Just Eat and home page should be display
+    - Scenario: Food Menu should be display
+    - Scenario: Search Input should be display
+    - Scenario: Search for restaurants in an area with postal code "AR51 1AA"
+    - Scenario: Search for restaurants in a random area "ZZ511ZZ"
+    - Scenario: I am new in the country, do not about the area and searching for restaurants
+    - Scenario: I am so hungary and searching for near by restaurants
+    
+     
