@@ -19,12 +19,12 @@ Home Of Just Eat Is Open
 
 I want food in
     [arguments]  ${postcode}
-    ${enter_postalCode}=    Enter PostalCode  ${postcode}
+    ${enter_postalcode}=    Enter Postalcode  ${postcode}
 
 Oops Error Message is shown
-    ${postalcode_ErrorMsg}=    Postalcode  ErrorMsg
-    Wait Until Element Is Visible    ${postalcode_ErrorMsg}
-    Should be equal as strings  ${postalcode_Errormsg}  ${HOME-PAGE-ERRORMSGB LOCATOR}
+    ${display_errormsg}=   Display Errormsg
+    #Wait Until Element Is Visible  ${postalcode_ErrorMsg}
+    Should be equal as strings  ${display_errormsg}  ${HOME-PAGE-ERRORMSGB LOCATOR}
 
 I should see some restaurants in
     [arguments]  ${postcode}
@@ -33,10 +33,12 @@ I should see some restaurants in
     should contain any  ${filtered_resturants[1]}  No  open  restaurants      ignore_case=True
 
 *** Test Cases ***
-Feature: Use the website to find restaurants
- So that I can order food
- As a hungry customer
- I want to be able to find restaurants in my area
+
+
+#Feature: to find restaurantsUse the website
+# So that I can order food
+# As a hungry customer
+# I want to be able to find restaurants in my area
 
 Scenario: Visit Just Eat and home page should be display
     Given Home Of Just Eat Is Open
@@ -67,16 +69,16 @@ Scenario: Search for restaurants in a random area "ZZ511ZZ"
       When I want food in   ${postcode}
       Then I should see some restaurants in     ${postcode}
 
-Scenario: I am new in the country, do not about the area and searching for restaurants
+Scenario: I am new in the country and do not know about the area in which I am searching for restaurants
       Given Home Of Just Eat Is Open
       ${postcode}=   Set Variable  AR51
-      When I want food in   ${postcode}
+      When I want food in  ${postcode}
       Then Oops Error Message is shown
 
 Scenario: I am so hungary and searching for near by restaurants
       Given Home Of Just Eat Is Open
       ${postcode}=   Set Variable  "''"
-      When I want food in ${postcode}
+      When I want food in  ${postcode}
       Then Oops Error Message is shown
 
 [Teardown]   Destroy Browser

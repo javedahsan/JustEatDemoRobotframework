@@ -12,20 +12,8 @@ request_header = {
     "Content-Type": "text/json"
 }
 # Test step 1 - Open URL
-
-
 driver = get_driver()
 
-# def test_open_url and verify:
-#     """
-#        This tests verifies the OpsHubMonitor UI ui is launched from the system.
-#        Steps:
-#            1. Launch OpsHubMonitor url
-#        Expected results:
-#            1. Verify OpsHubMonitor page is loaded
-#            2. Verify the element Option is selected
-#            3. Verify the element Option launches the required tabs
-#     """
 
 def extractPostalCode(postalCode):
     '''
@@ -38,8 +26,6 @@ def extractPostalCode(postalCode):
             else:
                 temp.append(postalCode[i])
     return  ''.join([i for i in temp])
-
-
 
 def display_Title(screenElement):
     '''
@@ -81,7 +67,7 @@ def find_Search():
 
     return retName, retType, retBtn
 
-def enter_postalCode(postcode):
+def enter_postalcode(postcode):
     '''
     Validate Postal code in Search Query field
         Return:
@@ -109,9 +95,13 @@ def enter_postalCode(postcode):
     except TimeoutException:
         print("Loading took too much time")
 
-def postalcode_ErrorMsg():
-            errMsg = driver.find_element(By.ID, 'errorMessage').text
-            return errMsg
+def display_errormsg():
+    try:
+        return WebDriverWait(driver, 100).until(
+            lambda driver: driver.find_element(By.ID, "errorMessage")).text
+        # c-locationHeader-container
+    except TimeoutException:
+        print("Error message is not found")
 
 def filtered_resturants():
     '''

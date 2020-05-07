@@ -60,7 +60,7 @@ See `$ python -m robot.run --help` for more information
     - Scenario: Search Input should be display
     - Scenario: Search for restaurants in an area with postal code "AR51 1AA"
     - Scenario: Search for restaurants in a random area "ZZ511ZZ"
-    - Scenario: I am new in the country, do not about the area and searching for restaurants
+    - Scenario: I am new in the country and do not know about the area in which I am searching for restaurants
     - Scenario: I am so hungary and searching for near by restaurants
     
      

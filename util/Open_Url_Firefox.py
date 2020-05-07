@@ -13,9 +13,9 @@ driver = get_driver()
 
 def test_open_url(url):
     """
-       This tests verifies the VODISUI UI ui is launched from the system using firefox browser.
+       This tests verifies the JUSTEAT UI ui is launched from the system using firefox browser.
        Steps:
-           1. Launch OpsHubMonitor ui url
+           1. Launch JUSTEAT ui url
        Expected results:
            1. Verify URL page is loaded
     """
